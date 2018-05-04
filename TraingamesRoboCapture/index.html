@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="core.js"></script>
+        <title>Traingames RoboCapture - Anti bot System</title>
+        <script type="text/javascript">
+        window.onmessage = function (e) {
+            handleMessage(e.data);
+        };
+    </script>
+    </head>
+    <body>
+        <div class="lbl">Traingames RoboCapture</div>
+        <div id="rb_capture" class="trc_box">
+            Type "<label id="message">I am not a robot</label>"<br>
+            <input id="user_type" type="text" value="" onkeypress="checkUser(event.key);"/>
+        </div>
+        <script type="text/javascript">
+            setRandomPhrase();
+            window.setTimeout(loop,30 * 1000);
+        </script>
+    </body>
+</html>
