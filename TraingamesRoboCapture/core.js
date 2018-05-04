@@ -8,6 +8,8 @@ var human = false;
 
 function loop()
 {
+    if (human == true)
+    return;
     tryes = 5;
     human = false;
     block_timeout();
