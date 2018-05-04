@@ -1,2 +1,3 @@
 TraingamesRoboCapture - Anti bot system
-- See the demo index.html on https://github.com/Isaquedeveloper/trc.github.io
+- See the demo source code on https://github.com/Isaquedeveloper/trc.github.io
+- Se demo working on https://isaquedeveloper.github.io/trc.github.io/
