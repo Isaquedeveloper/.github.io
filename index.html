@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Traingames Test 04/05/2018</title>
+  	<script type="text/javascript">
+	function sendMessage (iframeId, message)
+	{
+		var element = document.getElementById(iframeId);
+		element.contentWindow.postMessage(message,"*");
+	}
+	function check()
+	{
+		sendMessage("check","result");
+	}
+	</script>
+	        <script type="text/javascript">
+			//Is Human??
+        window.onmessage = function (e) {
+		var result = e.data;
+           if (result == "human")
+		   {
+			alert("All right, you are human.");
+		   }
+		   else if (result == "never-tryed")
+		   {
+			alert("Please, prove that you are human");
+		   }
+		   else if (result == "robot")
+		   {
+			alert("Fill TraingamesRoboCaprure correctly!");
+		   }
+		   else if (result == "robot-confirmed")
+		   {
+			alert("You need to be a human!");
+		   }
+        };
+    </script>
+  </head>
+ 
+  <body>
+	<iframe id="check" src="TraingamesRoboCapture/index.html"></iframe>
+	<button onclick="check();">Check</button>
+  </body>
+</html>
