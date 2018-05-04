@@ -1,2 +1,2 @@
-# TraingamesRoboCapture.github.io
-Anti bot system
+TraingamesRoboCapture - Anti bot system
+- See demo.html on https://github.com/Isaquedeveloper/trc.github.io
